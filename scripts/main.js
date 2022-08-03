@@ -5,8 +5,10 @@ $(document).ready(function () {
         data.email = $('#email').val();
         data.name = $('#name').val();
         data.address = $('#address').val();
+        console.log($(this).serializeArray());
         printTable(data);
     });
+
     function printTable(data) {
         let html = ''
         html += '<tr>'

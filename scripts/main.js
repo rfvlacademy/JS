@@ -32,4 +32,16 @@ $(document).ready(function () {
             $("#text").addClass(color).removeClass("red blue");
         }
     });
+    const mayuscula = new RegExp('[A-Z]');
+    const minuscula = new RegExp('[a-z]');
+    const number = new RegExp('[0-9]');
+    $("#password").on("focusout", function () {
+        const password = $("#password").val();
+        console.log(password.match(mayuscula));
+        if (password.match(mayuscula) && password.match(minuscula) && password.match(number)) {
+            $("#password").addClass('blue').removeClass("red white");
+        } else {
+            $("#password").addClass('red').removeClass("blue white");
+        }
+    })
 })

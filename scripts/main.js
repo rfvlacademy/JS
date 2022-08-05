@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("input[name='color']").on('click', function () {
         const color = $("input[name='color']:checked").val();
         let html = `<p> el color elejido es ${color}</p>`;
-        $('#text-modal').replaceWith(html);
+        $('#text-modal').empty().append(html);
         $('#myModal').modal('toggle')
         if (color === 'blue') {
             $("#text").addClass(color).removeClass("red white");

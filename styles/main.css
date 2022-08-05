@@ -1,14 +1,14 @@
 .blue {
     color: blue;
-    background-color: chocolate;
+    border: 3px solid blue;
 }
 
 .red {
     color: red;
-    background-color: darkgreen;
+    border: 3px solid red;
 }
 
 .white {
-    color: white;
-    background-color: black;
+    color: black;
+    border: 3px solid black;
 }

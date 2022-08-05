@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery con css</title>
+    <title>Ejemplo de JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+<body>
+<div class="container">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="color" id="red" value="red">
+        <label class="form-check-label" for="red">
+            Rojo
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="color" id="blue" value="blue">
+        <label class="form-check-label" for="blue">
+            Azul
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="color" id="white" value="white">
+        <label class="form-check-label" for="white">
+            Blanco
+        </label>
+    </div>
+    <div id="text">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+        1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
+        form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </div>
+    <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Color</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="text-modal">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

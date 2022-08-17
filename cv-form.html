@@ -15,46 +15,70 @@
     <link rel="stylesheet" href="styles/cv.form.css">
 </head>
 <body>
-<div class="container">
-        <div>
-            <div>
-                <h2>Datos Personales</h2>
-                <div class="form-group">
-                    <label>Fotografía</label>
-                    <input type="file" class="form-control" id="photo" name="photo"
-                           accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
-                </div>
-                <div class="form-group">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre">
-                </div>
-                <div class="form-group">
-                    <label>Apellido</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido">
-                </div>
-                <div class="form-group">
-                    <label>Telf</label>
-                    <input type="text" class="form-control" id="telf" name="telf">
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Logo(Rafael Falconí)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Datos personales<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="section-1" id="datos-personales">
+    <div class="container">
+        <h2>Datos Personales</h2>
+        <div class="form-group">
+            <label>Fotografía</label><br>
+            <input type="file" id="photo" name="photo"
+                   accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-12 col-lg-6">
+                <label>Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
             </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <h2>Educación</h2>
-                    <button type="button" class="btn btn-info" id="education">Agregar</button>
-                </div>
-                <div id="cont-education">
-
-                </div>
-
+            <div class="form-group col-sm-12 col-lg-6">
+                <label>Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido">
             </div>
         </div>
-        <button type="button" id="guardar" name="guardar" class="btn btn-outline-success">Guardar</button>
+        <div class="row">
+            <div class="form-group col-sm-12 col-lg-6">
+                <label>Telf</label>
+                <input type="text" class="form-control" id="telf" name="telf">
+            </div>
+            <div class="form-group col-sm-12 col-lg-6">
+                <label>Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+        </div>
+
+
+    </div>
+
 </div>
+
+<div class="section-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Educación</h2>
+                <button type="button" class="btn btn-info" id="education">Agregar</button>
+            </div>
+            <div id="cont-education">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button type="button" id="guardar" name="guardar" class="btn btn-outline-success">Guardar</button>
 
 </body>
 </html>

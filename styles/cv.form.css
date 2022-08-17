@@ -1,5 +1,36 @@
-.education{
+.education {
     padding: 5px;
     margin: 5px;
     border: 1px solid black;
+}
+
+.section-1 {
+    background-color: #14213d;
+    color: #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-2 {
+    background-color: #e5e5e5;
+    color: #14213d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#datos-personales {
+    margin-top: 56px;
+}
+
+.navbar {
+    background-color: #14213d;
+}
+
+.navbar-brand, .nav-link {
+    color: #e5e5e5 !important;
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+    color: #fca311 !important;
+    border-color: #fca311 !important;
 }

@@ -6,7 +6,7 @@ function printEducation() {
     for (let index = 0; index < education.length; index++) {
         html += '<div class="row education" id="education-' + index + '">' +
             '<div class="col-md-2 offset-md-10">\n' +
-            '<button type="button" class="close btn btn-danger" onclick="deleteEducation(' + index + ')" aria-label="Close" id="closeEducation-' + index + '">\n' +
+            '<button type="button" class="close btn btn-delete" onclick="deleteEducation(' + index + ')" aria-label="Close" id="closeEducation-' + index + '">\n' +
             '  <span aria-hidden="true">&times;</span>\n' +
             '</button></div>\n' +
             '<div class="col-4">' +
@@ -14,10 +14,10 @@ function printEducation() {
             '<input type="text" class="form-control" id="centro' + index + '" name="centro' + index + '" value="' + education[index].centro + '"' +
             'onchange="editCentro(' + index + ')"></div>\n' +
             '<div class="col-4"><label>Fecha de inicio</label>\n' +
-            '<input type="text" class="form-control" id="inicio' + index + '" name="inicio' + index + '" value="' + education[index].inicio + '"' +
+            '<input type="month" class="form-control" id="inicio' + index + '" name="inicio' + index + '" value="' + education[index].inicio + '"' +
             'onchange="editInicio(' + index + ')"></div>\n' +
             '<div class="col-4"><label>Fecha de fin</label>\n' +
-            '<input type="text" class="form-control" id="fin' + index + '" name="fin' + index + '" value="' + education[index].fin + '"' +
+            '<input type="month" class="form-control" id="fin' + index + '" name="fin' + index + '" value="' + education[index].fin + '"' +
             'onchange="editFin(' + index + ')"></div>\n' +
             '<div class="col-12">\n' +
             '<label>Titulo</label>\n' +
